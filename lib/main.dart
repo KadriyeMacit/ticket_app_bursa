@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:ticket_app_bursa/screens/profile_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -24,10 +25,7 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text("Bilet uygulaması")),
-      body: Center(
-        child: Container(height: 100, width: 100, color: Colors.red),
-      ),
+      body: ProfileScreen(),
       bottomNavigationBar: BottomNavigationBar(
         items: [
           BottomNavigationBarItem(icon: Icon(Icons.home), label: "Home"),
